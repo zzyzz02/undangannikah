@@ -4,6 +4,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const tamu = urlParams.get('tamu');
 
     if (satuMomen) {
-        satuMomen.dataset.guest = tamu
+        satuMomen.dataset.guest = tamu ? tamu : '';
     }
 });
